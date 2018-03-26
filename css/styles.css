@@ -84,8 +84,8 @@ h1, h2, h3, h4, h5, p {
 .c-feature {
     position: relative;
     display: block;
-    padding: 2rem 0;
-    background-color: #FFEC03;
+    padding: 2rem 0 1.5rem;
+    background-color: #FFE040;
     overflow: hidden;
 }
 .c-feature__img {
@@ -113,14 +113,6 @@ h1, h2, h3, h4, h5, p {
     color: #FFF;
     transition: all 0.6s ease;
 }
-.c-feature:hover .c-feature__mask {
-    opacity: 1;
-    transition: all 0.6s ease;
-}
-.c-feature:hover .c-feature__label {
-    padding-top: 5rem;
-    transition: all 0.6s ease;
-}
 @media screen and (min-width: 568px) {
     .c-feature {
         height: 20rem;
@@ -128,6 +120,14 @@ h1, h2, h3, h4, h5, p {
     }
     .c-feature__img {
         transform: rotate(-10deg);
+    }
+    .c-feature:hover .c-feature__mask {
+        opacity: 1;
+        transition: all 0.6s ease;
+    }
+    .c-feature:hover .c-feature__label {
+        padding-top: 5rem;
+        transition: all 0.6s ease;
     }
 }
 @media screen and (min-width: 1024px) {
